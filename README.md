@@ -3,7 +3,7 @@
 Openstack Queue Listener
 
 [![Build Status](https://travis-ci.org/chrissmall22/oql.svg?branch=master)](https://travis-ci.org/chrissmall22/oql)
-
+[![Coverage Status](https://coveralls.io/repos/github/chrissmall22/oql/badge.svg?branch=master)](https://coveralls.io/github/chrissmall22/oql?branch=master)
 
 A Tool to listen to a Openstack Notification queues
 

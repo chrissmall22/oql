@@ -1,4 +1,4 @@
 requests
 pika
-conigparser
+configparser
 argparse

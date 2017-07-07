@@ -23,7 +23,7 @@ from pip.req import parse_requirements
 
 
 def requires(filename):
-    requirements = parse_requirements(os.path.abspath(filename))
+    requirements = parse_requirements(os.path.abspath(filename),session=uuid.uuid1())
     return [str(r.req) for r in requirements]
 
 

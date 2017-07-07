@@ -57,8 +57,6 @@ setup(
     license='Apache License, Version 2.0',
     packages=['oql'],
     include_package_data=True,
-    install_requires=requires('requirements.txt'),
     test_suite='nose.collector',
-    tests_require=requires('test-requirements.txt'),
     zip_safe=False,
 )

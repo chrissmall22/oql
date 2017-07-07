@@ -37,7 +37,8 @@ setup(
     version='0.1',  # pylint: disable E0602
     description=("A python library to make interacting with the"
                  "Openstack Messaging Queues"),
-    long_description=readme(),
+    long_description=("A python library to make interacting with the"
+                 "Openstack Messaging Queues"),
     classifiers=[
         'Environment :: Console',
         'Development Status :: 4 - Beta',

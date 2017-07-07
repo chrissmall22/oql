@@ -19,7 +19,7 @@ import pika
 
 
 class rabbitmq():
-    """This class handles connections to the rabbitmq 
+    """This class handles connections to the rabbitmq
     Openstack message queue"""
 
     def __init__(self):
@@ -33,7 +33,7 @@ class rabbitmq():
         self.rabbit_password = None
         self.channel = None
 
-    def get_config(self,config_file):
+    def get_config(self, config_file):
         config = configparser.ConfigParser()
         config.read(config_file)
 
@@ -50,18 +50,20 @@ class rabbitmq():
         if self.environment and config[environment]['rabbit_password']:
             self.rabbit_password = config[self.environment]['rabbit_password']
 
-    def get_connection(self,config):
+    def get_connection(self, config):
 
         # Create Auth Credentials
         credentials = pika.credentials.PlainCredentials(
-            username=self.rabbit_user, 
-            password=self.rabbit_password, 
+            username=self.rabbit_user,
+            password=self.rabbit_password,
             erase_on_connect=False
             )
 
-        conn_param = pika.ConnectionParameters(host=self.rabbit_host,
-                                               credentials=credentials)
-                                               )
+        conn_param = pika.ConnectionParameters(
+            host=self.rabbit_host,
+            credentials=credentials
+            )
+                                        
         connection = pika.BlockingConnection(conn_param)
         channel = connection.channel()
 

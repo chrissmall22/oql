@@ -59,3 +59,4 @@ setup(
     test_suite='nose.collector',
     tests_require=requires('test-requirements.txt'),
     zip_safe=False,
+)

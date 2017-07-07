@@ -2,6 +2,11 @@
 
 Openstack Queue Listener
 
+.. image:: https://travis-ci.org/chrissmall22/oql.png?branch=master
+    :target: https://travis-ci.org/chrissmall22/oql
+.. image:: https://img.shields.io/coveralls/chrissmall22/oql.svg
+    :target: https://coveralls.io/r/chrissmall22/oql?branch=master
+
 A Tool to listen to a Openstack Notification queues
 
 ## Tools 

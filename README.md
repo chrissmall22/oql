@@ -1,6 +1,6 @@
 # oql
 
-Openstack Queue Listenert
+Openstack Queue Listener
 
 A Tool to listen to a Openstack Notification queues
 

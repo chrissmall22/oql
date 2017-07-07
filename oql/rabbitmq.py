@@ -63,9 +63,10 @@ class rabbitmq():
             host=self.rabbit_host,
             credentials=credentials
             )
-        
+
         connection = pika.BlockingConnection(conn_param)
         channel = connection.channel()
 
         result = channel.queue_declare(queue='notifications.info')
         return result
+        

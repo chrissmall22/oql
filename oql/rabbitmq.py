@@ -41,13 +41,13 @@ class rabbitmq():
         if config['DEFAULT']['environment']:
             self.environment = config['DEFAULT']['environment']
 
-        if self.environment and config[environment]['rabbit_host']:
+        if self.environment and config[self.environment]['rabbit_host']:
             self.rabbit_host = config[self.environment]['rabbit_host']
 
-        if self.environment and config[environment]['rabbit_user']:
+        if self.environment and config[self.environment]['rabbit_user']:
             self.rabbit_user = config[self.environment]['rabbit_user']
 
-        if self.environment and config[environment]['rabbit_password']:
+        if self.environment and config[self.environment]['rabbit_password']:
             self.rabbit_password = config[self.environment]['rabbit_password']
 
     def get_connection(self, config):

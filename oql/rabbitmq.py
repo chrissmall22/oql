@@ -17,8 +17,10 @@
 import configparser
 import pika
 
+
 class rabbitmq():
-    """This class handles connections to the rabbitmq Openstack message queue"""
+    """This class handles connections to the rabbitmq 
+    Openstack message queue"""
 
     def __init__(self):
         """Initializes the class. Set the server, user and password
@@ -30,7 +32,6 @@ class rabbitmq():
         self.rabbit_user = None
         self.rabbit_password = None
         self.channel = None
-
 
     def get_config(self,config_file):
         config = configparser.ConfigParser()
@@ -52,9 +53,11 @@ class rabbitmq():
     def get_connection(self,config):
 
         # Create Auth Credentials
-        credentials = pika.credentials.PlainCredentials(username=self.rabbit_user,
-                                                        password=self.rabbit_password,
-                                                        erase_on_connect=False)
+        credentials = pika.credentials.PlainCredentials(
+            username=self.rabbit_user, 
+            password=self.rabbit_password, 
+            erase_on_connect=False
+            )
 
         conn_param = pika.ConnectionParameters(host=self.rabbit_host,
                                                credentials=credentials)

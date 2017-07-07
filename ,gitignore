@@ -1,0 +1,37 @@
+# INI files with credentials
+*.ini
+
+# Compiled python modules.
+*.pyc
+
+# Setuptools build and distribution folder.
+/dist/
+/build/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Sublime text project files
+*.sublime-project
+*.sublime-workspace
+
+#Tox
+.tox/
+
+#venv
+.venv/
+
+#DS Store files
+.DS_Store
+
+#Nosetests XML report
+nosetests.xml
+
+#PyCharm project
+.idea/
+
+#Coverage
+.coverage
+
+#Sphinx build dir
+docs/build

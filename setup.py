@@ -48,7 +48,7 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    keywords=['hpe', 'openstack, 'rabbitmq'],
+    keywords=['hpe', 'openstack', 'rabbitmq'],
     url='https://github.com/chissmall22/odl',
     author="Chris Small, Hewlett-Packard Development Company, L.P",
     author_email="christopher.small@hpe.com",

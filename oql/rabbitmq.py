@@ -69,4 +69,3 @@ class rabbitmq():
 
         result = channel.queue_declare(queue='notifications.info')
         return result
-        

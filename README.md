@@ -1,2 +1,5 @@
-# rabbitmq-listener
-Tool to listen to a Openstack Rabbitmq Notification queue
+# oql-listener
+
+Openstack Queue Listener 
+
+A Tool to listen to a Openstack Notification message queue 

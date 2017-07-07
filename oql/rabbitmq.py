@@ -67,11 +67,6 @@ class rabbitmq():
         connection = pika.BlockingConnection(conn_param)
         channel = connection.channel()
 
-        exchange(topic=nova)
 
         result = channel.queue_declare(queue='notifications.info')
 
-
-
-
-    def subscribe(args,config,conn):
